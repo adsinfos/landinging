@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='')
+        meta(name='author' content='')
+
+        title Adsinfos
+
+        // Favicon
+        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Projects Section
+            section.py-5
+                .container.px-5.mb-5
+                    .text-center.mb-5
+                        h1.display-5.fw-bolder.mb-0
+                            span.text-gradient.d-inline Estadisticas
+                    .row.gx-5.justify-content-center
+
+                        .col-lg-11.col-xl-9.col-xxl-8
+
+                            // Project Card 1
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5
+                                            h2.fw-bolder Estadisticas
+                                            p Total de convocatorias leidas por nuestro sistema automatico en los ultimos 45 dias
+                                            a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/estadistica' target="_blank") Ver
+                                            a.btn.btn-outline-dark.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/assets/esta1.jpg' target="_blank") Ejemplo
+                                        img.img-fluid(src='assets/sicoes.png' alt='...' width="300" height="400")
+
+                            // Project Card 1
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5
+                                            h2.fw-bolder Estadisticas de tipo SICOES
+                                            p Total diario de convocatorias por el tipo de convocatorias clasificadas por el mismo SICOES
+                                            a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/estadistipo' target="_blank") Ver
+                                            a.btn.btn-outline-dark.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/assets/esta2.jpg' target="_blank") Ejemplo
+                                        img.img-fluid(src='assets/sicoes.png' alt='...' width="300" height="400")
+
+                            // Project Card 1
+                            .card.overflow-hidden.shadow.rounded-4.border-0.mb-5
+                                .card-body.p-0
+                                    .d-flex.align-items-center
+                                        .p-5
+                                            h2.fw-bolder Estadisticas por clasificacion ADSINFO
+                                            p Total diario de convocatorias por el tipo de convocatorias clasificadas por ADSINFO
+                                            a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/estadisgrupo' target="_blank") Ver
+                                            a.btn.btn-outline-dark.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='https://convocatorias.adsinfo.me/assets/esta3.jpg' target="_blank") Ejemplo
+                                        img.img-fluid(src='assets/sicoes.png' alt='...' width="300" height="400")
+
+            // Call to action section
+            section.py-5.bg-gradient-primary-to-secondary.text-white
+                .container.px-5.my-5
+                    .text-center
+                        h2.display-4.fw-bolder.mb-4 Usa nuestro BOT
+                        a.btn.btn-outline-light.btn-lg.px-5.py-3.fs-6.fw-bolder(href='https://t.me/Idotodobot') Hablame
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
